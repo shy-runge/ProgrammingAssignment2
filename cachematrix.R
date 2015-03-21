@@ -1,7 +1,5 @@
-# Matrix inversion is usually a costly computation and there may be some benefit
-# to caching the inverse of a matrix rather than compute it repeatedly. 
-
-#This is especially true for very large matrices
+#Caching inverse of matrixis useful when the inverse is called often and 
+#matrix is very large
 
 #Two functions are used to cache the inverse of a matrix.
 
@@ -43,7 +41,7 @@ cacheSolve <- function(x, ...) {
         
 }
 
-
+#-----------------------------------------------------------
 # sample execution of the data
 #> x<-matrix(c(2,3,2,2),2,2)
 #> m = makeCacheMatrix(x)
